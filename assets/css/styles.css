@@ -143,6 +143,10 @@ td {
     .subtitle-2 {
         font-size: 1.2rem;
     }
+
+    .attribution{
+        color: blue;
+    }
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
@@ -162,6 +166,9 @@ td {
 
     .subtitle-2 {
         font-size: 1.2rem;
+    }
+    .attribution{
+        color: yellow;
     }
 }
 
@@ -183,9 +190,9 @@ td {
     .subtitle-2 {
         font-size: 1rem;
     }
-    
+
     .attribution{
-        font-size: 0.8rem;
+        color: red;
     }
 }
 
@@ -206,6 +213,10 @@ td {
 
     .subtitle-2 {
         font-size: 0.9rem;
+    }
+
+    .attribution{
+        color: cyan;
     }
 
 }
