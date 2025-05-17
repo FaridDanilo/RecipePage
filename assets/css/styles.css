@@ -183,6 +183,10 @@ td {
     .subtitle-2 {
         font-size: 1rem;
     }
+    
+    .attribution{
+        font-size: 0.8rem;
+    }
 }
 
 @media (max-width: 575.98px) {
@@ -204,7 +208,4 @@ td {
         font-size: 0.9rem;
     }
 
-    .attribution{
-        font-size: 0.8rem;
-    }
 }
