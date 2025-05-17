@@ -26,7 +26,7 @@ body {
 
 .recipe-container {
     width: 50rem;
-    margin: 8rem 0;
+    margin: 10px 0;
     padding: 2.2rem;
     border-radius: 1.5rem;
     background-color: var(--color-white);
@@ -125,52 +125,29 @@ td {
     padding: 14px 0;
 }
 
-@media (max-width: 575.98px) {
+@media (min-width: 992px) {
     .recipe-container {
-        width: 98%;
-        margin: 0 0 10px 0;
-        padding: 0.5rem;
-        border-radius: 0;
+        width: 50rem;
+        padding: 2.2rem;
+        border-radius: 1.5rem;
     }
 
     .title {
-        font-size: 1.2rem;
+        font-size: 2.2rem;
     }
 
     .subtitle {
-        font-size: 1rem;
+        font-size: 1.8rem;
     }
 
     .subtitle-2 {
-        font-size: 0.9rem;
-    }
-}
-
-@media (min-width: 576px) and (max-width: 767.98px) {
-    .recipe-container {
-        width: 90%;
-        margin: 0 0 15px 0;
-        padding: 1rem;
-        border-radius: 0.5rem;
-    }
-
-    .title {
-        font-size: 1.5rem;
-    }
-
-    .subtitle {
         font-size: 1.2rem;
-    }
-
-    .subtitle-2 {
-        font-size: 1rem;
     }
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
     .recipe-container {
         width: 70%;
-        margin: 0 0 20px 0;
         padding: 1.5rem;
         border-radius: 1rem;
     }
@@ -188,23 +165,42 @@ td {
     }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 576px) and (max-width: 767.98px) {
     .recipe-container {
-        width: 50rem;
-        margin: 8rem 0;
-        padding: 2.2rem;
-        border-radius: 1.5rem;
+        width: 90%;
+        padding: 1rem;
+        border-radius: 0.5rem;
     }
 
     .title {
-        font-size: 2.2rem;
+        font-size: 1.5rem;
     }
 
     .subtitle {
-        font-size: 1.8rem;
+        font-size: 1.2rem;
     }
 
     .subtitle-2 {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .recipe-container {
+        width: 98%;
+        padding: 0.5rem;
+        border-radius: 0;
+    }
+
+    .title {
         font-size: 1.2rem;
+    }
+
+    .subtitle {
+        font-size: 1rem;
+    }
+
+    .subtitle-2 {
+        font-size: 0.9rem;
     }
 }
