@@ -203,4 +203,8 @@ td {
     .subtitle-2 {
         font-size: 0.9rem;
     }
+
+    .attribution{
+        font-size: 0.8rem;
+    }
 }
