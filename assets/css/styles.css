@@ -11,7 +11,7 @@
     --color-stone-light: hsl(30, 54%, 90%);
     --color-stone-medium: hsl(30, 18%, 87%);
     --color-stone-dark: hsl(30, 10%, 34%);
-    --color-stone-darker: hsl(24, 5%, 18%);
+    --color-stone-darker: hsl(30, 4%, 18%);
     --color-brown: hsl(14, 45%, 36%);
     --color-rose-dark: hsl(332, 51%, 32%);
     --color-rose-light: hsl(330, 100%, 98%);
@@ -25,7 +25,7 @@ body {
 }
 
 .recipe-container {
-    width: 45%;
+    width: 50rem;
     margin: 8rem 0;
     padding: 2.2rem;
     border-radius: 1.5rem;
@@ -50,12 +50,13 @@ section:nth-of-type(3) {
 
 img {
     width: 100%;
-    border-radius: 1rem;
+    border-radius: 15px;
 }
 
 .title {
     font-size: 2.2rem;
     margin: 1.5rem 0;
+    color: var(--color-stone-darker);
 }
 
 .text {
@@ -95,6 +96,7 @@ span {
 }
 
 li::marker {
+    font-size: .8rem;
     color: var(--color-brown);
 }
 
@@ -102,15 +104,48 @@ li {
     color: var(--color-stone-dark);
 }
 
+ol li::marker {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
 table{
+    width: 100%;
     padding-top: 15px;
     color: var(--color-stone-dark);
 }
 
 td:nth-of-type(2) {
     color: var(--color-brown);
+    font-weight: bold;
 }
 
 td {
     border-bottom: 1px solid var(--color-stone-light);
+    padding: 14px 0;
+}
+
+@media (max-width: 768px) {
+    .recipe-container {
+        width: 70%;
+        margin: 0 0 20px 0;
+        padding: 0;
+        border-radius: 0;
+    }
+
+    img {
+        border-radius: 0;
+    }
+
+    .title {
+        font-size: 1.8rem;
+    }
+
+    .subtitle {
+        font-size: 1.5rem;
+    }
+
+    .subtitle-2 {
+        font-size: 1.2rem;
+    }
 }
